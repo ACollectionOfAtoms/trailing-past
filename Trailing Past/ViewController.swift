@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         let playerLayer = AVPlayerLayer(player: player)
         let bounds:CGRect = self.view.layer.bounds
         let title = UILabel()
+        let button = UIButton(type: UIButtonType.System) as UIButton
 
         
         playerLayer.frame = self.view.frame
@@ -37,9 +38,20 @@ class ViewController: UIViewController {
         title.numberOfLines = 2
         title.frame = CGRectMake(0, 100, 300, 500)
         title.center = self.view.center
-        
         self.view.addSubview(title)
+        
+        button.frame = CGRectMake(200,200,100,50)
+        button.backgroundColor = UIColor.greenColor()
+        button.setTitle("Test Button", forState: UIControlState.Normal)
+        button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        self.view.addSubview(button)
+
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    func buttonAction(sender:UIButton!)
+    {
+        print("Button tapped!")
     }
     
     override func shouldAutorotate() -> Bool {
