@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         let player = AVPlayer(URL: NSURL(fileURLWithPath: path!))
         let playerLayer = AVPlayerLayer(player: player)
         let bounds:CGRect = self.view.layer.bounds
-        let myFirstLabel = UILabel()
+        let title = UILabel()
 
         
         playerLayer.frame = self.view.frame
@@ -30,22 +30,30 @@ class ViewController: UIViewController {
         player.play()
         
         //This doesn't need to be done progromatically. Change it!
-        myFirstLabel.text = "Trailing Past"
-        myFirstLabel.font = UIFont(name: "STHeitiTC-Light", size: 35)
-        myFirstLabel.textColor = UIColor.whiteColor()
-        myFirstLabel.textAlignment = .Center
-        myFirstLabel.numberOfLines = 2
-        myFirstLabel.frame = CGRectMake(15, -100, 300, 500)
+        title.text = "Trailing Past"
+        title.font = UIFont(name: "STHeitiTC-Light", size: 35)
+        title.textColor = UIColor.whiteColor()
+        title.textAlignment = .Center
+        title.numberOfLines = 2
+        title.frame = CGRectMake(0, 100, 300, 500)
+        title.center = self.view.center
         
-        self.view.addSubview(myFirstLabel)
+        self.view.addSubview(title)
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return [UIInterfaceOrientationMask.Portrait]
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
