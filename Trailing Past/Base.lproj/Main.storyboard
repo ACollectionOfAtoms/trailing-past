@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,21 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HjC-bT-Wm5" userLabel="foreground">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zoo-Xp-JhK">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onV-H6-olk">
-                                        <rect key="frame" x="210" y="270" width="35" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trailing Past" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6a-Yd-MHg">
+                                <rect key="frame" x="220" y="255" width="159" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Rv0-BY-zwB"/>
+                                    <constraint firstAttribute="width" constant="159" id="mBi-Aj-gTI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="phS-Dh-nu0">
+                                <rect key="frame" x="-1" y="556" width="602" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <barButtonItem style="plain" id="5Ej-Fy-H6a">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6wl-3A-MVr">
+                                            <rect key="frame" x="20" y="7" width="60" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Sign Up"/>
+                                        </button>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jgB-0g-Tdb"/>
+                                    <barButtonItem style="plain" id="lTm-HX-cQg">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ynv-nI-2ab">
+                                            <rect key="frame" x="536" y="7" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Login"/>
+                                        </button>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="phS-Dh-nu0" firstAttribute="centerX" secondItem="k6a-Yd-MHg" secondAttribute="centerX" id="CRd-uB-Mtu"/>
+                            <constraint firstItem="phS-Dh-nu0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="FzI-GF-qWZ"/>
+                            <constraint firstItem="zoo-Xp-JhK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HdB-dy-uUH"/>
+                            <constraint firstItem="phS-Dh-nu0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-21" id="dOF-jR-B6d"/>
+                            <constraint firstItem="zoo-Xp-JhK" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="g8R-vb-wxb"/>
+                            <constraint firstItem="k6a-Yd-MHg" firstAttribute="centerY" secondItem="zoo-Xp-JhK" secondAttribute="centerY" id="h3F-Q6-Kts"/>
+                            <constraint firstItem="zoo-Xp-JhK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iXj-oi-PFE"/>
+                            <constraint firstAttribute="trailing" secondItem="zoo-Xp-JhK" secondAttribute="trailing" id="xOb-fP-a2c"/>
+                            <constraint firstItem="k6a-Yd-MHg" firstAttribute="centerX" secondItem="zoo-Xp-JhK" secondAttribute="centerX" id="yls-Cw-4FY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="zoo-Xp-JhK" id="jCE-fn-gDf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
