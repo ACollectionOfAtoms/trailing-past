@@ -17,6 +17,8 @@
 		D72B75D71C0A47CF0091D4FC /* parade.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D72B75D61C0A42510091D4FC /* parade.mp4 */; };
 		D748CAA21C0E25A5006065DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D748CAA11C0E25A5006065DC /* SignUpViewController.swift */; };
 		D7781C9D1C0F465000574D1A /* fbicon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7781C9C1C0F465000574D1A /* fbicon.png */; };
+		D77D74F21C10EEF900646472 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77D74F11C10EEF900646472 /* LocationViewController.swift */; };
+		D7A0D7731C0F975D00E501EB /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A0D7721C0F975D00E501EB /* SignUpModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		D72B75D61C0A42510091D4FC /* parade.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = parade.mp4; sourceTree = "<group>"; };
 		D748CAA11C0E25A5006065DC /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D7781C9C1C0F465000574D1A /* fbicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbicon.png; sourceTree = "<group>"; };
+		D77D74F11C10EEF900646472 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		D7A0D7721C0F975D00E501EB /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				D72B75A51C0A38630091D4FC /* AppDelegate.swift */,
+				D77D74F11C10EEF900646472 /* LocationViewController.swift */,
 				D72B75A71C0A38630091D4FC /* ViewController.swift */,
+				D7A0D7721C0F975D00E501EB /* SignUpModel.swift */,
 				D748CAA11C0E25A5006065DC /* SignUpViewController.swift */,
 				D72B75A91C0A38630091D4FC /* Main.storyboard */,
 				D72B75AF1C0A38630091D4FC /* Assets.xcassets */,
@@ -269,6 +275,8 @@
 			files = (
 				D72B75A81C0A38630091D4FC /* ViewController.swift in Sources */,
 				D72B75AE1C0A38630091D4FC /* Trailing_Past.xcdatamodeld in Sources */,
+				D7A0D7731C0F975D00E501EB /* SignUpModel.swift in Sources */,
+				D77D74F21C10EEF900646472 /* LocationViewController.swift in Sources */,
 				D748CAA21C0E25A5006065DC /* SignUpViewController.swift in Sources */,
 				D72B75A61C0A38630091D4FC /* AppDelegate.swift in Sources */,
 			);

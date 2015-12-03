@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Trailing Past
 //
-//  Created by David Hernandez on 11/28/15.
+//  Created by Adam Hernandez on 11/28/15.
 //  Copyright © 2015 Adam. All rights reserved.
 //
 
